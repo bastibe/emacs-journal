@@ -691,6 +691,7 @@ This allows the use of `org-journal-tag-alist' and
           (org-set-tags org-crypt-tag-matcher)))
       (run-hooks 'org-journal-after-header-create-hook))))
 
+;;;###autoload
 (defun org-journal-insert-header-at-point ()
   "Create journal style headline at point."
   (interactive)
@@ -1081,6 +1082,7 @@ With non-nil prefix argument create a regular entry instead of a TODO entry."
       (org-insert-time-stamp time t)
       (org-cycle))))
 
+;;;###autoload
 (defun org-journal-new-scheduled-entry-at-point (prefix &optional scheduled-time)
   "Insert a journal style scheduled entry at current cursor location."
   (interactive "P")
